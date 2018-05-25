@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://www.purebasic.com/namespace" version="1.0" creator="PureBasic 5.30 (Windows - x64)">
+  <section name="config">
+    <options closefiles="1" openmode="0" name="Crypton"/>
+  </section>
+  <section name="data">
+    <explorer view="" pattern="0"/>
+    <log show="1"/>
+    <lastopen date="2018-03-15 21:27" user="Téo_Tinarrage" host="ORDI-TÉO"/>
+  </section>
+  <section name="files">
+    <file name="Cryptage de fichier - crypton.pb">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="0" panelstate="+"/>
+      <fingerprint md5="2f26429606d64a17ff4e0c49ce890525"/>
+    </file>
+    <file name="Crypton.pb">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="+"/>
+      <fingerprint md5="71c5e27b67e35e7b78b99246f254af50"/>
+    </file>
+    <file name="Ecriture2 - crypton.pb">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="+"/>
+      <fingerprint md5="3df6d91f354320aea73666a3523fcb22"/>
+    </file>
+    <file name="Lecture - crypton.pb">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="+"/>
+      <fingerprint md5="245b186fc37ed718d1b3f132409d404e"/>
+    </file>
+    <file name="Paramètres - crypton.pb">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="+"/>
+      <fingerprint md5="b63745da0e11e8ef969bfb426498ffd9"/>
+    </file>
+    <file name="Réecriture - crypton.pb">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="0" panelstate="+"/>
+      <fingerprint md5="ee0391d8a20a4c0cfb57861e8aa43582"/>
+    </file>
+  </section>
+  <section name="targets">
+    <target name="Cible par défaut" enabled="1" default="1">
+      <inputfile value="Crypton.pb"/>
+      <outputfile value=""/>
+      <executable value="CryptonTest.exe"/>
+      <options unicode="1" xpskin="1" debug="1"/>
+    </target>
+  </section>
+</project>
