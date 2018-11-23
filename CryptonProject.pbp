@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://www.purebasic.com/namespace" version="1.0" creator="PureBasic 5.30 (Windows - x64)">
+  <section name="config">
+    <options closefiles="0" openmode="0" name="Crypton"/>
+  </section>
+  <section name="data">
+    <explorer view="" pattern="0"/>
+    <log show="1"/>
+    <lastopen date="2018-11-13 15:13" user="Téo_Tinarrage" host="ORDI-TÉO"/>
+  </section>
+  <section name="files">
+    <file name="characterConversion.pb">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="0" panelstate="+"/>
+      <fingerprint md5="e65a30991c776f5333f99573c2aeb461"/>
+    </file>
+    <file name="cryptLib.pbi">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="+"/>
+      <fingerprint md5="e8ab7fcd47da8e0f086a254097107876"/>
+    </file>
+    <file name="Crypton.pb">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="+"/>
+      <fingerprint md5="937c7c73663341dc1aac7171f59fa27f"/>
+    </file>
+    <file name="editorLib.pbi">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="+"/>
+      <fingerprint md5="3e22562b18adef4a15e77eed97add1be"/>
+    </file>
+    <file name="globalFunctions.pbi">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="0" panelstate="+"/>
+      <fingerprint md5="dfa675c67765049f8735e8f160be3f95"/>
+    </file>
+    <file name="intro.pb">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="0" panelstate="+"/>
+      <fingerprint md5="a2edb47828022019efb39c034e736a26"/>
+    </file>
+    <file name="passwordRequester.pb">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="+"/>
+      <fingerprint md5="f45cbff0155542d61d515abe7fdd90c3"/>
+    </file>
+    <file name="readInitFiles.pb">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="+"/>
+      <fingerprint md5="b964d51c719c7bab6733fda23b98a97c"/>
+    </file>
+    <file name="textLib.pb">
+      <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="+"/>
+      <fingerprint md5="a22c284c7ef7f9bbd0cfb60fd044c75f"/>
+    </file>
+  </section>
+  <section name="targets">
+    <target name="Cible par défaut" enabled="1" default="1">
+      <inputfile value="Crypton.pb"/>
+      <outputfile value=""/>
+      <options unicode="1" xpskin="1" debug="1"/>
+    </target>
+  </section>
+</project>

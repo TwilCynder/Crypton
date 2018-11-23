@@ -187,29 +187,7 @@ If open=1
   
 EndIf  
   
-  OpenWindow(2,0,0,800,620,"Crypton - lecture",#PB_Window_SystemMenu | #PB_Window_WindowCentered,WindowID(1))
-  EditorGadget(7,5,5,790,560,#PB_Editor_WordWrap)
-  SetGadgetFont(7,FontID(3))
-  SetGadgetColor(7,#PB_Gadget_FrontColor,Config\FontColor)
-  SetGadgetAttribute(7,#PB_Editor_ReadOnly,1)
-  CheckBoxGadget(8,5,580,50,15,"Edition")
-  ButtonGadget(9,600,570,195,20,"SAUVEGARDER ET QUITTER")
-  CreateMenu(0,WindowID(2))
-  MenuTitle("Fichier")
-  MenuItem(1,"Enregistrer" + Chr(9) +"Ctrl + S")
-  AddKeyboardShortcut(2,#PB_Shortcut_Control | #PB_Shortcut_S,1)
-  MenuItem(2,"Enregistrer sous"+Chr(9)+"Ctrl+Maj+S")
-  AddKeyboardShortcut(2,#PB_Shortcut_Control | #PB_Shortcut_Shift | #PB_Shortcut_S,2)
-  MenuItem(3,ChangeFileAction$)
-  MenuItem(4,"Changer le mot de passe")
-  MenuItem(5,PasswordOption$+" mot de passe") 
-  MenuItem(6,"Quitter sans sauvegarder")
-  CreateToolBar(1,WindowID(2))
-  ToolBarStandardButton(1,#PB_ToolBarIcon_Save)
-  
-  ToolBarHeight = ToolBarHeight(1)
-  
-  ResizeGadget(7,5,5 + 2 + ToolBarHeight,790,560 - 2 - ToolBarHeight)
+  initEditor(0,fileType$)
   
   For z = 1 To x
     AddGadgetItem(7,-1,decrypt$(z))
@@ -368,11 +346,11 @@ If Not fileType$="text"
   BadCharacters$ = ""
 For x = 1 To line                                            ;On lance une boucle avec 'line' itérations
   For y = 1 To Len(lignes$(x))                               ;On lance une boucle avec autant d'itérations que le nombre de caractères de lignes$(x)
-    CharIsOk = 0                                             ;On met 'CharIsOk' à 0 à chaque itération de la seconde boucle
+    CharIsOk = 0                                             ;On met 'CharIsOk' à 1 à chaque itération de la seconde boucle
     TestingChar$ = Mid(lignes$(x),y,1)                       ;On remplit la variable 'TestingChar' avec un caractère : les deux boulces feront que tous les caractères du texte y passeront
     For z = 0 To #NombreDeCaracteres                         ;On lance une troisième boucle avec autant d'itérations qu'il y a de caractères reconnus
-      If TestingChar$ = lettres$(z)                          ;On teste si 'TesingCahr$' est égale à un caractère reconnu
-        CharIsOk = 1                                         ;Si oui, on passe 'CharIsOk' à 1
+      If TestingChar$ = lettres$(z)                          ;On teste si 'TesingCahr$' est égal à un caractère reconnu
+        CharIsOk = 1                                        ;Si oui, on passe 'CharIsOk' à 1
       EndIf                           
     Next 
     If CharIsOk = 0                                          ;On teste si CharIsOk est toujours à 0, donc si 'testingChar$' ne correspond à aucun caractère reconnu
@@ -527,6 +505,6 @@ If quit = 0
   Goto edition
 EndIf 
 ; IDE Options = PureBasic 5.30 (Windows - x64)
-; CursorPosition = 367
-; FirstLine = 351
+; CursorPosition = 189
+; FirstLine = 155
 ; EnableXP
